@@ -1,0 +1,12 @@
+---
+---
+
+// The empty front matter above is required: it tells Jekyll to process this
+// file, compiling it to /assets/css/style.css. Without it, Jekyll copies the
+// .scss file as-is and the browser gets nothing it can use.
+//
+// Partials are looked up in _sass/ (the leading underscore and extension
+// are omitted here).
+
+@import "variables";
+@import "base";

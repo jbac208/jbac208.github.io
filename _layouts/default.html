@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body>
+  <header>
+    {% include nav.html %}
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>© {{ site.time | date: "%Y" }} {{ site.author | escape }}</p>
+  </footer>
+</body>
+</html>

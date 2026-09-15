@@ -1,0 +1,10 @@
+# Jekyll build output and caches
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Created by `bundle install` if a Gemfile is ever added
+Gemfile.lock
+
+# macOS Finder metadata
+.DS_Store

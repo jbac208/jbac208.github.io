@@ -1,0 +1,28 @@
+// All tunable values for the site live here.
+// Change a value once and it updates everywhere it is used in _base.scss.
+
+// Typography ------------------------------------------------------------------
+
+// Serif body text. System fonts only, so the site makes no font requests.
+// Charter ships with macOS and iOS; Georgia covers almost everything else.
+$font-body: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+
+// Code. ui-monospace resolves to the platform default (SF Mono on Apple).
+$font-mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+$font-size: 1.125rem;   // base body size (18px at the browser default)
+$line-height: 1.6;      // body line spacing
+$measure: 68ch;         // maximum width of the text column
+
+// Color -----------------------------------------------------------------------
+
+$color-text: #1d1d1b;
+$color-muted: #6b6b66;            // dates, footer, blockquotes
+$color-background: #fdfdfb;
+$color-rule: #deded8;             // borders and horizontal rules
+$color-code-background: #f2f2ee;
+$color-accent: #1a5fb4;           // links — the one accent color
+
+// Spacing ---------------------------------------------------------------------
+
+$space: 1.25rem;        // side margin on narrow screens; base vertical unit

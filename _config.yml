@@ -1,0 +1,66 @@
+# Site configuration.
+#
+# Jekyll reads this file once, at the start of a build. On GitHub Pages every
+# push triggers a fresh build, so changes here take effect on the next push.
+# (If you ever run `jekyll serve` locally, it does NOT reload this file —
+# restart the server after editing.)
+#
+# Every top-level key here is available in templates as `site.<key>`,
+# e.g. `{{ site.title }}`.
+
+# --- Site identity -----------------------------------------------------------
+
+# Site name. Used in the <title> tag and as the first link in the nav.
+title: Joey Back
+
+# Your name. Used in the footer.
+author: Joey Back
+
+# One-line summary. Used as the <meta name="description"> on any page that
+# doesn't set its own `description:` in front matter.
+description: Personal site. Writing, technical notes, and a reading list.
+
+# --- URLs --------------------------------------------------------------------
+
+# Path prefix for the whole site. Empty, because a repo named
+# <username>.github.io serves from the domain root, not a subfolder.
+baseurl: ""
+
+# How page URLs are built. `pretty` turns about.md into /about/ instead of
+# /about.html. (Collection items set their own pattern below.)
+permalink: pretty
+
+# --- Collections -------------------------------------------------------------
+
+# A collection is a folder of related documents. Each key below is a
+# collection name; its files live in a folder named with a leading
+# underscore (`thoughts` -> `_thoughts/`). Templates can loop over them
+# as `site.thoughts`.
+collections:
+  thoughts:
+    # Render each file to its own page. Without this, the documents are
+    # readable in templates but never get a URL.
+    output: true
+    # URL pattern for each document. `:name` is the filename without its
+    # extension, so _thoughts/pomdp-confusion.md -> /thoughts/pomdp-confusion/
+    permalink: /thoughts/:name/
+
+# --- Front matter defaults ---------------------------------------------------
+
+# Values applied to files automatically, as if written in their front matter.
+# Each entry has a `scope` (which files it applies to) and `values` (what
+# gets set). Anything written in a file's own front matter wins over these.
+defaults:
+  # Every regular page (index.md, about.md, new.md, thoughts.html, ...).
+  - scope:
+      path: ""        # "" means every folder in the site
+      type: pages     # only standalone pages, not collection documents
+    values:
+      layout: default # wrap in _layouts/default.html
+
+  # Every document in the `thoughts` collection.
+  - scope:
+      path: ""        # every folder
+      type: thoughts  # the collection name from `collections:` above
+    values:
+      layout: post    # wrap in _layouts/post.html
