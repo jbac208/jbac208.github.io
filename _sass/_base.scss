@@ -39,6 +39,10 @@ body {
   line-height: $line-height;
 }
 
+main {
+  display: flow-root; // contains floats, so the footer never runs under the photo
+}
+
 body > header {
   margin-bottom: 2 * $space;
 }
@@ -189,4 +193,36 @@ td {
 .post-list time {
   color: $color-muted;
   font-variant-numeric: tabular-nums; // dates line up in a column
+}
+
+// Home page -------------------------------------------------------------------
+
+// Photo and links, floated right like a Wikipedia infobox.
+.profile {
+  float: right;
+  width: $profile-width;
+  margin: 0 0 $space $space;
+  text-align: center;
+}
+
+.profile img {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.profile ul {
+  margin: 0.5em 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9em;
+}
+
+// On a phone there isn't room for text beside the photo,
+// so it sits above the text instead, centered.
+@media (max-width: $narrow) {
+  .profile {
+    float: none;
+    margin: 0 auto $space;
+  }
 }

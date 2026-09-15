@@ -21,8 +21,13 @@ $color-muted: #6b6b66;            // dates, footer, blockquotes
 $color-background: #fdfdfb;
 $color-rule: #deded8;             // borders and horizontal rules
 $color-code-background: #f2f2ee;
-$color-accent: #1a5fb4;           // links — the one accent color
+$color-accent: #1a5fb4;           // links: the one accent color
 
 // Spacing ---------------------------------------------------------------------
 
 $space: 1.25rem;        // side margin on narrow screens; base vertical unit
+
+// Layout ----------------------------------------------------------------------
+
+$profile-width: 12rem;  // width of the photo box on the home page
+$narrow: 30em;          // below this screen width, the photo stops floating
