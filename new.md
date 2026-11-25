@@ -11,5 +11,4 @@ Changes to this site, newest first.
   - YYYY-MM-DD — What changed.
 {% endcomment %}
 
-- 2026-09-15 – Thoughts/ponders, ch1 uploaded.
 - 2026-09-14 — Site created.

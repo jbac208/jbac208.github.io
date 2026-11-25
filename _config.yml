@@ -11,16 +11,45 @@
 # --- Site identity -----------------------------------------------------------
 
 # Site name. Used in the <title> tag and as the first link in the nav.
-title: Joey Back
+title: Joey Sehan Back
 
 # Your name. Used in the footer.
-author: Joey Back
+author: Joey Sehan Back
 
 # One-line summary. Used as the <meta name="description"> on any page that
 # doesn't set its own `description:` in front matter.
-description: Personal site. Writing, technical notes, and a reading list.
+description: Joey Sehan Back is a Fulbright scholar from New Zealand doing robotics research at Carnegie Mellon University in Pittsburgh, PA.
+
+# --- Identity for search engines ---------------------------------------------
+#
+# Fed into the Person structured data (JSON-LD) in _includes/head.html, which
+# is what Google reads when deciding who this site is about. Keep these
+# consistent with every profile listed under `same_as`.
+
+# Other names people might search for.
+alternate_names:
+  - Joey Back
+
+job_title: Robotics Researcher
+affiliation: Carnegie Mellon University
+affiliation_url: https://www.cmu.edu
+nationality: New Zealand
+location: Pittsburgh, PA
+
+# Profiles that belong to you. Google uses these to confirm the site and the
+# profiles are the same person. Add LinkedIn, ORCID, X, etc. here as you make
+# them, and link back to this site from each profile.
+same_as:
+  - https://github.com/jbac208
+  - https://www.linkedin.com/in/joeyback/
+  - https://scholar.google.com/citations?user=ereEVxwAAAAJ
+  - https://orcid.org/0009-0006-0872-4232
 
 # --- URLs --------------------------------------------------------------------
+
+# Full address of the live site. Used for canonical links, the sitemap, and
+# structured data, which all need absolute URLs.
+url: https://jbac208.github.io
 
 # Path prefix for the whole site. Empty, because a repo named
 # <username>.github.io serves from the domain root, not a subfolder.
@@ -64,3 +93,11 @@ defaults:
       type: thoughts  # the collection name from `collections:` above
     values:
       layout: post    # wrap in _layouts/post.html
+
+# --- Plugins -----------------------------------------------------------------
+
+# On GitHub Pages' allowlist and bundled in the github-pages gem.
+plugins:
+  # Writes /sitemap.xml listing every published page, so search engines
+  # find them all. Unpublished posts (`published: false`) are left out.
+  - jekyll-sitemap

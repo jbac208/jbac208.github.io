@@ -1,6 +1,7 @@
 ---
 title: ponders, ch1
 date: 2026-09-15
+published: false  # hidden: not built, not listed, no URL
 ---
 
 It’s September 15th, not the 15th of September. I’m still getting used to small things like these in America. Like being a traveller with one l (traveler?). Or Fahrenheit. I searched it up the other day. Apparently, 0 degrees Fahrenheit is as cold as an ice bath. Maybe if Thomas Feet fell into one then there’d be just units as opposed to metric units. Why is there even a tonne and a metric tonne? Tonne, ton, metric ton/ne? Honestly, I’m probably the wrong person to ask…
