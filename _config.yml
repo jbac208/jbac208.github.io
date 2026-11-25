@@ -94,6 +94,13 @@ defaults:
     values:
       layout: post    # wrap in _layouts/post.html
 
+  # The Search Console verification file: served unchanged, kept out of the
+  # sitemap.
+  - scope:
+      path: google78a98971e1610754.html
+    values:
+      sitemap: false
+
 # --- Plugins -----------------------------------------------------------------
 
 # On GitHub Pages' allowlist and bundled in the github-pages gem.
